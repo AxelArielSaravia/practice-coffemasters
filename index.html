@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="">
+        <title>Coffee Masters</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="manifest" href="app.webmanifest">
+        <link rel="apple-touch-icon" href="images/icons/icon.png">
+        <link rel="icon" href="images/icons/icon.png">
+        <script src="app.js" type="module"></script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <img src="images/logo.svg" width="140" alt="Coffee Masters">
+                <span class="sr-only">Coffee Masters</span>
+            </h1>
+            <nav id="navlinks">
+                <a class="navlink"
+                    name="home"
+                    href="/"
+                >
+                    local_cafe
+                </a>
+                <a class="navlink"
+                    name="order"
+                    href="/order"
+                >
+                    shopping_cart
+                    <sup id="badge" hidden></sup>
+                </a>
+            </nav>
+        </header>
+        <main id="main"></main>
+        <template id="template-menu">
+            <!-- Menu-->
+            <section name="page" class="menu-page">
+                <ul class="container"></ul>
+            </section>
+            <!-- Menu item-->
+            <li name="element">
+                <h3></h3>
+                <ul class="category"></ul>
+            <li>
+        </template>
+        <template id="template-product-item">
+            <article class="product-item">
+                <a href="#">
+                    <img src="" alt="">
+                    <h4></h4>
+                </a>
+                <p class="price"></p>
+                <button>Add</button>
+            </article>
+        </template>
+        <template id="template-order">
+            <!-- Empty -->
+            <section name="empty" class="order-page">
+                <p class="empty">Your order is empty</p>
+            </section>
+            <!-- Order -->
+            <section name="page" class="order-page">
+                <h2 name="title">Your Order</h2>
+                <ul name="orders"></ul>
+                <div style="padding: 4ch 0;">
+                    <span class="total">Total:</span>
+                    <span class="total-price"></span>
+                </div>
+                <form name="form">
+                    <label>
+                        Name <input name="name" required>
+                    </label>
+                    <label>
+                        Phone Number <input name="phone" type="tel">
+                    </label>
+                    <label>
+                        Email <input name="phone" type="email">
+                    </label>
+                    <button type="submit">Place Order</button>
+                </form>
+            </section>
+        </template>
+        <template id="template-details-page">
+            <section class="detail-page">
+                <header>
+                    <a href="#" name="back">&lt; Back</a>
+                    <h2></h2>
+                </header>
+                <img src="" alt="">
+                <p class="description"></p>
+                <p class="price"></p>
+                <button>Add to cart</button>
+            </section>
+        </template>
+        <template id="template-cart-item">
+            <li class="cart-item">
+                <span class="qty"></span>
+                <span class="name"></span>
+                <span class="price"></span>
+                <button class="delete">🗑️</button>
+            </li>
+        </template>
+    </body>
+</html>
