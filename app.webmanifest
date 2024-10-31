@@ -1,0 +1,33 @@
+{
+    "name": "Coffee Masters",
+    "short_name": "Coffee MAsters",
+    "theme_color": "#f0f0f0",
+    "display": "standalone",
+    "background_color": "",
+    "start_url": "/",
+    "scope": "/",
+    "description": "The app gor orderat Coffee Masters, the best coffee shop",
+    "icons": [
+        {
+            "src": "images/icons/icon.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icons/icon-maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "images/screen1.jpg",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "images/screen2.jpg",
+            "type": "image/jpeg"
+        }
+    ]
+}
